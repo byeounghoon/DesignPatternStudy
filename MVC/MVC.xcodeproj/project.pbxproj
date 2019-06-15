@@ -12,7 +12,23 @@
 		48D52AB122B4B9F900469AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AAF22B4B9F900469AD1 /* Main.storyboard */; };
 		48D52AB322B4B9F900469AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AB222B4B9F900469AD1 /* Assets.xcassets */; };
 		48D52AB622B4B9F900469AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AB422B4B9F900469AD1 /* LaunchScreen.storyboard */; };
+		48D52B8922B4E4D800469AD1 /* GitHubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B8822B4E4D800469AD1 /* GitHubAPI.framework */; };
+		48D52B8A22B4E4D800469AD1 /* GitHubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B8822B4E4D800469AD1 /* GitHubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48D52B8B22B4E4D800469AD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48D52B8A22B4E4D800469AD1 /* GitHubAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48D52AA822B4B9F900469AD1 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		48D52AB222B4B9F900469AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D52AB522B4B9F900469AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48D52AB722B4B9F900469AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48D52B8822B4E4D800469AD1 /* GitHubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GitHubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D52B8922B4E4D800469AD1 /* GitHubAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		48D52A9F22B4B9F900469AD1 = {
 			isa = PBXGroup;
 			children = (
+				48D52B8822B4E4D800469AD1 /* GitHubAPI.framework */,
 				48D52AAA22B4B9F900469AD1 /* MVC */,
 				48D52AA922B4B9F900469AD1 /* Products */,
 			);
@@ -74,6 +93,7 @@
 				48D52AA422B4B9F900469AD1 /* Sources */,
 				48D52AA522B4B9F900469AD1 /* Frameworks */,
 				48D52AA622B4B9F900469AD1 /* Resources */,
+				48D52B8B22B4E4D800469AD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

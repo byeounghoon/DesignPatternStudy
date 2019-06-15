@@ -12,7 +12,23 @@
 		48D52AED22B4BA4C00469AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AEB22B4BA4C00469AD1 /* Main.storyboard */; };
 		48D52AEF22B4BA4D00469AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AEE22B4BA4D00469AD1 /* Assets.xcassets */; };
 		48D52AF222B4BA4D00469AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AF022B4BA4D00469AD1 /* LaunchScreen.storyboard */; };
+		48D52B9522B4E4ED00469AD1 /* GitHubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */; };
+		48D52B9622B4E4ED00469AD1 /* GitHubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48D52B9722B4E4ED00469AD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48D52B9622B4E4ED00469AD1 /* GitHubAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48D52AE422B4BA4C00469AD1 /* CleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		48D52AEE22B4BA4D00469AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D52AF122B4BA4D00469AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48D52AF322B4BA4D00469AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GitHubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D52B9522B4E4ED00469AD1 /* GitHubAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		48D52ADB22B4BA4C00469AD1 = {
 			isa = PBXGroup;
 			children = (
+				48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */,
 				48D52AE622B4BA4C00469AD1 /* CleanSwift */,
 				48D52AE522B4BA4C00469AD1 /* Products */,
 			);
@@ -74,6 +93,7 @@
 				48D52AE022B4BA4C00469AD1 /* Sources */,
 				48D52AE122B4BA4C00469AD1 /* Frameworks */,
 				48D52AE222B4BA4C00469AD1 /* Resources */,
+				48D52B9722B4E4ED00469AD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
