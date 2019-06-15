@@ -31,16 +31,17 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        self.requestRepository()
+        self.fetchRepositories()
     }
     
 }
 
 extension ViewController {
     
-    func requestRepository() {
+    func fetchRepositories() {
         
-        GitHubAPI.requestRepository("swiftUI") { (repositories) in
+        // Business
+        GitHubAPI.requestRepositories("swiftUI") { (repositories) in
             
             self.repos = repositories
             self.tableView.reloadData()

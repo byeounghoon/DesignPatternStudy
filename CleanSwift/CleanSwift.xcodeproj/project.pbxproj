@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		48D52AE822B4BA4C00469AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52AE722B4BA4C00469AD1 /* AppDelegate.swift */; };
-		48D52AEA22B4BA4C00469AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52AE922B4BA4C00469AD1 /* ViewController.swift */; };
 		48D52AED22B4BA4C00469AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AEB22B4BA4C00469AD1 /* Main.storyboard */; };
 		48D52AEF22B4BA4D00469AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AEE22B4BA4D00469AD1 /* Assets.xcassets */; };
 		48D52AF222B4BA4D00469AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52AF022B4BA4D00469AD1 /* LaunchScreen.storyboard */; };
 		48D52B9522B4E4ED00469AD1 /* GitHubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */; };
 		48D52B9622B4E4ED00469AD1 /* GitHubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48D52BA522B4F78200469AD1 /* RepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52B9F22B4F78200469AD1 /* RepositoryPresenter.swift */; };
+		48D52BA622B4F78200469AD1 /* RepositoryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52BA022B4F78200469AD1 /* RepositoryWorker.swift */; };
+		48D52BA722B4F78200469AD1 /* RepositoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52BA122B4F78200469AD1 /* RepositoryRouter.swift */; };
+		48D52BA822B4F78200469AD1 /* RepositoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52BA222B4F78200469AD1 /* RepositoryModels.swift */; };
+		48D52BA922B4F78200469AD1 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52BA322B4F78200469AD1 /* RepositoryViewController.swift */; };
+		48D52BAA22B4F78200469AD1 /* RepositoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52BA422B4F78200469AD1 /* RepositoryInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,12 +38,17 @@
 /* Begin PBXFileReference section */
 		48D52AE422B4BA4C00469AD1 /* CleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D52AE722B4BA4C00469AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48D52AE922B4BA4C00469AD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48D52AEC22B4BA4C00469AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48D52AEE22B4BA4D00469AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D52AF122B4BA4D00469AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48D52AF322B4BA4D00469AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48D52B9422B4E4ED00469AD1 /* GitHubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GitHubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D52B9F22B4F78200469AD1 /* RepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPresenter.swift; sourceTree = "<group>"; };
+		48D52BA022B4F78200469AD1 /* RepositoryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryWorker.swift; sourceTree = "<group>"; };
+		48D52BA122B4F78200469AD1 /* RepositoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRouter.swift; sourceTree = "<group>"; };
+		48D52BA222B4F78200469AD1 /* RepositoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModels.swift; sourceTree = "<group>"; };
+		48D52BA322B4F78200469AD1 /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		48D52BA422B4F78200469AD1 /* RepositoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +84,16 @@
 			isa = PBXGroup;
 			children = (
 				48D52AE722B4BA4C00469AD1 /* AppDelegate.swift */,
-				48D52AE922B4BA4C00469AD1 /* ViewController.swift */,
 				48D52AEB22B4BA4C00469AD1 /* Main.storyboard */,
 				48D52AEE22B4BA4D00469AD1 /* Assets.xcassets */,
 				48D52AF022B4BA4D00469AD1 /* LaunchScreen.storyboard */,
 				48D52AF322B4BA4D00469AD1 /* Info.plist */,
+				48D52B9F22B4F78200469AD1 /* RepositoryPresenter.swift */,
+				48D52BA022B4F78200469AD1 /* RepositoryWorker.swift */,
+				48D52BA122B4F78200469AD1 /* RepositoryRouter.swift */,
+				48D52BA222B4F78200469AD1 /* RepositoryModels.swift */,
+				48D52BA322B4F78200469AD1 /* RepositoryViewController.swift */,
+				48D52BA422B4F78200469AD1 /* RepositoryInteractor.swift */,
 			);
 			path = CleanSwift;
 			sourceTree = "<group>";
@@ -155,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48D52AEA22B4BA4C00469AD1 /* ViewController.swift in Sources */,
+				48D52BAA22B4F78200469AD1 /* RepositoryInteractor.swift in Sources */,
 				48D52AE822B4BA4C00469AD1 /* AppDelegate.swift in Sources */,
+				48D52BA522B4F78200469AD1 /* RepositoryPresenter.swift in Sources */,
+				48D52BA922B4F78200469AD1 /* RepositoryViewController.swift in Sources */,
+				48D52BA822B4F78200469AD1 /* RepositoryModels.swift in Sources */,
+				48D52BA622B4F78200469AD1 /* RepositoryWorker.swift in Sources */,
+				48D52BA722B4F78200469AD1 /* RepositoryRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

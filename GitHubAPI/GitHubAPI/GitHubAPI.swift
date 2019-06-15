@@ -10,7 +10,7 @@ import Foundation
 
 public enum GitHubAPI {
     
-    public static func requestRepository(_ keyword: String,
+    public static func requestRepositories(_ keyword: String,
                                          completion: @escaping([Repository]) -> Void) {
         
         let urlString = "https://api.github.com/search/repositories?q=\(keyword)&sort=stars"
@@ -81,5 +81,5 @@ public struct Repository {
     
 }
 
-
+public typealias GitHubRepository = Repository
 

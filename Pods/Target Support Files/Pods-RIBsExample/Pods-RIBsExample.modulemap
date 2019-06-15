@@ -1,0 +1,6 @@
+framework module Pods_RIBsExample {
+  umbrella header "Pods-RIBsExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

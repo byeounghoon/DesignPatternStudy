@@ -18,10 +18,13 @@
          location = "group:MVVM/MVVM.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:RIBs/RIBs.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:CleanSwift/CleanSwift.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:RIBsExample/RIBsExample.xcodeproj">
+      </FileRef>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
