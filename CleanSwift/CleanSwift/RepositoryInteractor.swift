@@ -35,9 +35,6 @@ class RepositoryInteractor: RepositoryBusinessLogic, RepositoryDataStore
             let response = Repository.Something.Response(listData: repositories)
             self.presenter?.presentSomething(response: response)
         }
-        
-        
-        
     }
 }
 
