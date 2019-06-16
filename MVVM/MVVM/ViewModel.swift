@@ -9,7 +9,7 @@
 import GitHubAPI
 
 protocol ViewModelInput {
-    func fetchRepositories()
+    func fetchRepositories(keyword: String)
 }
 
 protocol ViewModelOutput {
@@ -39,8 +39,8 @@ class ViewModel: NSObject, ViewModelType, ViewModelInput {
     var outputs: ViewModelOutput?
     
     // MARK: input protocol
-    func fetchRepositories() {
-        model.fetchRepositories {
+    func fetchRepositories(keyword: String) {
+        model.fetchRepositories(keyword: keyword) {
             self.vc.tableView.reloadData()
         }
     }

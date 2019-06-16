@@ -25,8 +25,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let keyword = "SwiftUI"
+        
+        self.title = keyword
         self.viewModel = ViewModel(self)
-        self.viewModel.fetchRepositories()
+        self.viewModel.fetchRepositories(keyword: keyword)
     }
 
 }

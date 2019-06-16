@@ -18,8 +18,8 @@ class Model {
     
     init() {}
     
-    func fetchRepositories(complete: @escaping ()->Void) {
-        GitHubAPI.requestRepositories("SwiftUI") { (repositories) in
+    func fetchRepositories(keyword: String, complete: @escaping ()->Void) {
+        GitHubAPI.requestRepositories(keyword) { (repositories) in
             self.repositories = repositories
             complete()
         }
