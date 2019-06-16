@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4896D1A422B602A100C97ECB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896D1A322B602A100C97ECB /* Model.swift */; };
 		48D52ACA22B4BA3D00469AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52AC922B4BA3D00469AD1 /* AppDelegate.swift */; };
 		48D52ACC22B4BA3D00469AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D52ACB22B4BA3D00469AD1 /* ViewController.swift */; };
 		48D52ACF22B4BA3D00469AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D52ACD22B4BA3D00469AD1 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4896D1A322B602A100C97ECB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		48D52AC622B4BA3D00469AD1 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D52AC922B4BA3D00469AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D52ACB22B4BA3D00469AD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				48D52AC922B4BA3D00469AD1 /* AppDelegate.swift */,
 				48D52ACB22B4BA3D00469AD1 /* ViewController.swift */,
 				48D52BB322B54A8000469AD1 /* ViewModel.swift */,
+				4896D1A322B602A100C97ECB /* Model.swift */,
 				48D52ACD22B4BA3D00469AD1 /* Main.storyboard */,
 				48D52AD022B4BA3D00469AD1 /* Assets.xcassets */,
 				48D52AD222B4BA3D00469AD1 /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				48D52ACC22B4BA3D00469AD1 /* ViewController.swift in Sources */,
 				48D52BB422B54A8000469AD1 /* ViewModel.swift in Sources */,
 				48D52ACA22B4BA3D00469AD1 /* AppDelegate.swift in Sources */,
+				4896D1A422B602A100C97ECB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
